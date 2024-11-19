@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2c6a31;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 380px;
+    height: 40px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+article {
+    flex: 3;
+    background-color: #e9f7e9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+article section {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    color: #2c6a31;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    color: #4a9f4a;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+article img {
+    max-width: 400px;
+    height: 300px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+aside {
+    flex: 1;
+    background-color: #d3e6d3;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+aside h3 {
+    color: #2c6a31;
+    margin-bottom: 20px;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2c6a31;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsif untuk ukuran layar lebih kecil */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
